@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Pulp Lab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="ticker-band">
+  <div class="ticker-label">LAB REPORT —</div>
+  <div class="ticker-scroll">
+    <div class="ticker-track">
+      <span>Why every AI notetaker sounds the same</span>
+      <span>The RFP deck is now a comms artifact</span>
+      <span>LinkedIn ghostwriting, but make it AI-fluent</span>
+      <span>Reading the AI hype cycle like we read every other one</span>
+      <span>The executive voice is the last real differentiator</span>
+      <span>Why every AI notetaker sounds the same</span>
+      <span>The RFP deck is now a comms artifact</span>
+      <span>LinkedIn ghostwriting, but make it AI-fluent</span>
+      <span>Reading the AI hype cycle like we read every other one</span>
+      <span>The executive voice is the last real differentiator</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="masthead">
+    <div class="masthead-row">
+      <a href="index.html" class="wordmark">Pulp Lab</a>
+      <nav class="top-nav">
+        <a href="findings.html">Findings</a>
+        <a href="work.html">The Work</a>
+        <a href="backissues.html">Back Issues</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <a class="back-link" href="index.html">← Pulp Lab</a>
+    <span class="section-num">04</span>
+    <h1>Work with the desk</h1>
+  </section>
+
+  <section class="section reveal">
+    <div class="services-list">
+      <div class="service">
+        <div class="idx">Embedded Comms</div>
+        <h3>Executive &amp; Thought Leadership</h3>
+      </div>
+      <div class="service">
+        <div class="idx">AI Communications SME</div>
+        <h3>AI Fluency, Applied</h3>
+      </div>
+      <div class="service">
+        <div class="idx">Pre-Sales &amp; Proposal</div>
+        <h3>RFPs &amp; Strategic Narrative</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="cta-row" style="margin-bottom:32px;">
+      <a href="mailto:kate@pulplab.com" class="btn btn-solid">Start a conversation</a>
+    </div>
+    <div class="footer-row">
+      <div class="footer-col">
+        <strong>Get in touch</strong>
+        <a href="mailto:kate@pulplab.com">kate@pulplab.com</a>
+      </div>
+      <div class="footer-col">
+        <strong>Based in</strong>
+        Palm Springs, CA
+      </div>
+      <div class="footer-col">
+        <strong>Entity</strong>
+        Pulp Media Lab, Inc. — WOSB Certified
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        entry.target.classList.add('visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
