@@ -181,24 +181,6 @@ nav.top-nav a:hover, nav.top-nav a.active{border-bottom:1px solid var(--ink);}
   margin:0;
 }
 
-/* Case studies */
-.cases{display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--rule-strong); border:1px solid var(--rule-strong);}
-.case{background:var(--newsprint); padding:32px;}
-.case .tag{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:11px;
-  letter-spacing:0.08em;
-  text-transform:uppercase;
-  color:var(--signal-deep);
-  margin-bottom:14px;
-}
-.case h3{font-family:'Newsreader',serif; font-weight:500; font-size:22px; margin:0 0 12px;}
-.case p{color:var(--ink-soft); font-size:15px;}
-.stat-row{display:flex; gap:24px; margin-top:18px; flex-wrap:wrap;}
-.stat{font-family:'IBM Plex Mono',monospace;}
-.stat .num{font-size:22px; display:block; color:var(--brick);}
-.stat .label{font-size:10px; text-transform:uppercase; letter-spacing:0.06em; color:var(--kraft);}
-
 /* Lab Report / Back Issues */
 .labreport-intro{
   color:var(--ink-soft);
@@ -206,31 +188,6 @@ nav.top-nav a:hover, nav.top-nav a.active{border-bottom:1px solid var(--ink);}
   max-width:56ch;
   margin:-14px 0 32px;
 }
-.labreport-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:1px;
-  background:var(--rule-strong);
-  border:1px solid var(--rule-strong);
-  margin-bottom:22px;
-}
-.labreport-card{background:var(--newsprint); padding:24px;}
-.labreport-card .then,
-.labreport-card .now{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:10px;
-  letter-spacing:0.08em;
-  text-transform:uppercase;
-  color:var(--kraft);
-}
-.labreport-card .now{color:var(--signal-deep); margin-top:16px;}
-.lr-line{
-  font-family:'Newsreader',serif;
-  font-size:16px;
-  margin:6px 0 0;
-  color:var(--ink-soft);
-}
-.lr-line.strong{color:var(--ink); font-style:italic;}
 .archive-link{
   display:inline-block;
   font-family:'IBM Plex Mono',monospace;
@@ -265,6 +222,69 @@ nav.top-nav a:hover, nav.top-nav a.active{border-bottom:1px solid var(--ink);}
   color:var(--ink-soft);
 }
 
+/* Timeline */
+.timeline{
+  position:relative;
+  padding-left:36px;
+  margin-top:8px;
+}
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:5px;
+  top:6px;
+  bottom:6px;
+  width:2px;
+  background:var(--rule-strong);
+}
+.timeline-item{
+  position:relative;
+  padding-bottom:40px;
+}
+.timeline-item:last-child{padding-bottom:0;}
+.timeline-dot{
+  position:absolute;
+  left:-36px;
+  top:4px;
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:var(--signal);
+  border:3px solid var(--newsprint);
+  box-shadow:0 0 0 1px var(--rule-strong);
+}
+.timeline-date{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.08em;
+  color:var(--kraft);
+  margin-bottom:8px;
+}
+.timeline-then{
+  font-family:'Newsreader',serif;
+  font-style:italic;
+  font-size:16px;
+  color:var(--ink-soft);
+  margin:0 0 6px;
+  max-width:56ch;
+}
+.timeline-now{
+  font-family:'Newsreader',serif;
+  font-size:17px;
+  color:var(--ink);
+  margin:0 0 10px;
+  max-width:56ch;
+}
+.timeline-link{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:11px;
+  letter-spacing:0.03em;
+  color:var(--signal-deep);
+  text-decoration:none;
+  border-bottom:1px solid var(--rule-strong);
+  padding-bottom:1px;
+}
+
 /* Footer */
 footer{padding:48px 0 60px;}
 .footer-row{display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px;}
@@ -274,7 +294,7 @@ footer{padding:48px 0 60px;}
 
 @media (max-width: 820px){
   .hero h1{font-size:38px;}
-  .cases, .services-list, .labreport-grid{grid-template-columns:1fr;}
+  .services-list{grid-template-columns:1fr;}
 }
 
 /* Scroll reveal */
