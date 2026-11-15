@@ -63,7 +63,13 @@
         <div class="bar-row"><span class="bar-l">Led with a person</span><span class="bar"><i style="width:100%"></i></span><span class="bar-v">3.6%+</span></div>
         <div class="bar-row"><span class="bar-l">Led with the product</span><span class="bar"><i style="width:31%"></i></span><span class="bar-v">1.1%</span></div>
       </div>
-      <p>AI-assisted analysis showed which posts worked and why. That became a repeatable content formula for the team. I also wrote the tone and style guide used to onboard an incoming agency partner, plus the newsletters, town hall comms, and video scripts around the program.</p>
+      <p>AI-assisted analysis showed which posts worked and why. That became a repeatable content formula for the team. I also wrote the tone and style guide used to onboard an incoming agency partner, plus the newsletters, town hall comms, and video scripts around the program. I also wrote original thought leadership for the CVP, published under her byline.</p>
+      <a class="link-card" href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/29/small-and-medium-businesses-arent-waiting-for-an-ai-invitation-theyre-already-leading/">
+        <img class="link-card-img" loading="lazy" src="assets/cvp-smb-ai-invitation.jpg" alt="Two small business workers unpacking a delivery, Microsoft Cloud Blog header image">
+        <span class="link-card-label">Thought leadership · Microsoft Cloud Blog · June 29, 2026</span>
+        <span class="link-card-title">Small and medium businesses aren’t waiting for an AI invitation—they’re already leading</span>
+        <span class="link-card-go">Read the post →</span>
+      </a>
     </article>
 
     <article class="case">
@@ -72,6 +78,12 @@
       <p class="case-lede">Two regulated industries. One message: secure, compliance-aligned, and actually usable.</p>
       <p>I led marketing strategy and comms for the corporate rebrand. Positioning covered HIPAA-aligned communication and AI-enabled workflows across chat, SMS, secure mail, and virtual agents. Deliverables: content and brand audits, a website optimization strategy, and voice and messaging guidelines for every internal and external channel.</p>
       <!-- ADD: one result or outcome line if you have it -->
+      <figure class="media-grid media-3">
+        <img loading="lazy" src="https://linklive.ai/wp-content/uploads/2026/03/Homepage-HeaderImage1-Upscaled.png" alt="LinkLive AI-native CX platform, homepage header">
+        <img loading="lazy" src="https://linklive.ai/wp-content/uploads/2026/04/Finance-Financial-product-guidance.png" alt="LinkLive for finance: financial product guidance">
+        <img loading="lazy" src="https://linklive.ai/wp-content/uploads/2026/04/Healthcare-Refill-a-prescription.png" alt="LinkLive for healthcare: refill a prescription">
+        <figcaption>LinkLive today. Images from <a href="https://linklive.ai/">linklive.ai</a>.</figcaption>
+      </figure>
     </article>
 
     <article class="case">
@@ -85,6 +97,20 @@
       <div class="case-label">More</div>
       <h2>Ghost Town Ranch</h2>
       <p class="case-lede">AI cinematic creative for a lifestyle brand rooted in the American West.</p>
+      <figure class="gtr-hero">
+        <video src="assets/gtr-lou.mp4" poster="assets/gtr-lou-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Lou, an AI brand character for Ghost Town Ranch, with the Boot Horn"></video>
+        <figcaption>Lou, with the Boot Horn. AI cinematic.</figcaption>
+      </figure>
+      <div class="media-grid media-3 vertical">
+        <video src="assets/gtr-gift-hair-scalp.mp4" poster="assets/gtr-gift-hair-scalp.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Gift Guide ad: for the one with the good hair"></video>
+        <video src="assets/gtr-gift-cold-night.mp4" poster="assets/gtr-gift-cold-night.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Gift Guide ad: cold night"></video>
+        <video src="assets/gtr-gift-the-road.mp4" poster="assets/gtr-gift-the-road.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Gift Guide ad: the road"></video>
+        <p class="vcap">Gift Guide ads. 9:16 for social.</p>
+      </div>
+      <p class="press">As seen in
+        <a href="https://www.latimes.com/lifestyle/list/29-palms-near-joshua-tree-9-great-shops-new-businesses">Los Angeles Times</a> ·
+        <a href="https://voyagela.com/interview/life-values-legacy-our-chat-with-kate-pawlicki-bourne-of-palm-springs-joshua-tree-highlight/">VoyageLA</a> ·
+        <a href="https://boldjourney.com/meet-kate-pawlicki-bourne/">Bold Journey</a></p>
       <div class="cta-row">
         <a href="https://ghosttownranch.com" class="btn btn-solid">ghosttownranch.com</a>
         <a href="https://instagram.com/ghosttownranch" class="btn btn-outline">@ghosttownranch</a>
@@ -114,6 +140,9 @@
 </div>
 
 <script>
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('video').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+  }
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
